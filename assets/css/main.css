@@ -888,9 +888,32 @@ button,
 
 #logo-container {
   position: fixed;
-  top: 1.5rem;
-  left: 15%;
+  top: 2em; /* or tweak to taste */
+  left: 3.5em;
   z-index: 1000;
+}
+
+@media screen and (max-width: 736px) {
+  #logo-container {
+    top: 2em;
+    left: 2em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #logo-container {
+    top: 1.25em;
+    left: 1.25em;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  #logo-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 1em 0 0 0;
+  }
 }
 
 #logo-container img {
