@@ -885,3 +885,16 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+
+#logo-container {
+  position: fixed;
+  top: 1.5rem;
+  left: 15%;
+  z-index: 1000;
+}
+
+#logo-container img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
